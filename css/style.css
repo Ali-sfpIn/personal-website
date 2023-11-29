@@ -1,0 +1,153 @@
+body {
+  font-family: inter;
+  background-image: url(../images/dev-background.png);
+  background-size: 600px;
+}
+.navbar,
+.dropdown ul {
+  background-color: #1d2d44;
+}
+.navbar a,.typing {
+  color: white;
+}
+.navbar-toggler-icon {
+  color: white;
+}
+.navbar a:hover,
+.navbar a:active {
+  color: #3e5c76;
+}
+.search-btn {
+  border: 1px solid white;
+}
+.search-btn:hover {
+  color: #3e5c76 !important ;
+  background-color: white;
+}
+.front {
+  height: inherit;
+  width: 100%;
+}
+img {
+  width: 500px;
+  margin-top: 30px;
+  height: 100%;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.dev-img {
+  margin: 0;
+  padding-top: 10px;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.typing {
+  overflow: hidden;
+  color: white;
+  font-weight: 900;
+  white-space: nowrap;
+  animation: typing 5s steps(16) infinite;
+}
+.its-me {
+  color: #eef0f1;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 50px;
+}
+.img-col {
+  font-size: 59px;
+}
+.fa-brands {
+  padding:1
+  cursor: pointer;
+  font-size: initial;
+}
+
+.fa-brands:hover {
+  transform: scale(1.6);
+  transition: all 0.3s;
+}
+.insider {
+  color: gray;
+}
+.see {
+  font-family: "Shadows Into Light", cursive;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 16px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 15px;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: black;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(24px);
+  -ms-transform: translateX(24px);
+  transform: translateX(24px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.love-img {
+  display: none;
+}
+.dev-img:hover .love-img {
+  display: block;
+}
+.insider{
+  width: fit-content;
+}
+@keyframes typing {
+  0% {
+    width: 0ch;
+  }
+  50% {
+    width: 37ch;
+  }
+  100% {
+    width: 0ch;
+  }
+}
